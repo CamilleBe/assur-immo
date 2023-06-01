@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border-style: none;
+    border-radius: 50px;
+    padding:5px;
+    color: white;
+    font-weight: 600;
+    width: 200px;
+    font-size: 16px;
+    background-color: #34D9DD;
+}
+
+/*HEADER*/
+
+h1 {
+    margin-bottom: 50px;
+}
+
+header {
+    background-image: url("img/backgrounf-head.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: right;*/
+    color: white;
+    padding-left: 60%;
+    padding-top: 100px;
+    padding-right: 15%;
+    padding-bottom: 100px;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.list img {
+    margin-right: 15px;
+}
+
+header button {
+    margin-top: 25px;
+    background-color: #112448;
+    font-size: 18px;
+}
+
+/*CARD*/
+
+h2 {
+    font-size: 24px;
+    margin-bottom:50px;
+}
+
+.center {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.container-card {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+h3 {
+    color:  #284B8C;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.card {
+    box-shadow: 0px 8px 10px 3px rgba(119, 119, 119, 0.35);
+    -moz-box-shadow: 0px 8px 10px 3px rgba(119, 119, 119, 0.35);
+    -webkit-box-shadow: 0px 8px 10px 3px rgba(119, 119, 119, 0.35);
+    border-radius: 10px;
+    width: 308px;
+}
+
+.card p {
+    padding: 15px;
+}
+
+/*CARD ICONE */
+
+.card-icone {
+    width: 300px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.center button {
+    margin-top: 50px;
+}
+
+/*BANDEAU*/
+#bandeau {
+    text-align: center;
+    background-color: #D1DCFF;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#bandeau p, #bandeau h2 {
+    width: 30%;
+    margin: auto;
+}
+
+#bandeau h2 {
+    margin-bottom: 25px;
+}
+
+span {
+    color: #284B8C;
+    font-weight: 600;
+}
+
+/*TEXT*/
+.text {
+    text-align: left;
+    width: 500px;
+}
+
+#little {
+    width: 450px;
+}
+
+#more-little {
+    width: 400px;
+}
+
+.text h3 {
+    font-size: 26px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+/*FOOTER*/
+footer {
+    text-align: center;
+    background-color: #112448;
+    color: white;
+    padding: 15px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 1560px) {
+    .container-card {
+        gap: 20px;
+    }
+}
+
+@media(max-width: 1450px) {
+    header {
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .row {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1187px) {
+    #little {
+        width: 500px;
+    }
+
+    #id-button {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 1290px) {
+    header {
+        padding-left: 10%;
+        background-image: url("img/background-responsive.png");
+    }
+}
+
+@media (max-width: 962px) {
+    #desapere {
+        display: none;
+    }
+
+    #bandeau p, #bandeau h2 {
+        width: 55%;
+    }
+}
+
+@media (max-width: 500px) {
+    .center {
+        margin-bottom: 50px;
+    }
+
+    #bandeau p, #bandeau h2 {
+        width: 70%;
+    }
+}
